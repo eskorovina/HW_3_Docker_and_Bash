@@ -39,7 +39,7 @@ inside_reporter() {
 create_local_data() {
 
     mkdir -p "$LOCAL_DATA_DIR"
-    python3 generator/generate.py "$LOCAL_DATA_DIR"
+    python3 generate.py "$LOCAL_DATA_DIR"
 }
 
 report_server() {
