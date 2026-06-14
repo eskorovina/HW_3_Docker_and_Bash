@@ -8,6 +8,7 @@ build_generator() {
 }
 
 run_generator() {
+    mkdir -p "$DATA_DIR"
     docker run --rm -v "$DATA_DIR":/data my_generator
 }
 
@@ -16,6 +17,7 @@ build_reporter() {
 }
 
 run_reporter() {
+    mkdir -p "$DATA_DIR"
     docker run --rm -v "$DATA_DIR":/data my_reporter
 }
 
